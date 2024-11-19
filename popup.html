@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="container">
+    <h1>QuickRate</h1>
+    <input type="text" id="professorName" placeholder="Professor Name">
+    <button id="searchButton">Search</button>
+    <div id="results"></div>
+
+    <div id="schoolSettings">
+        <h2>Set School</h2>
+        <select id="schoolDropdown">
+            <option value="15723">Arizona State University</option>
+            <option value="1402">University of Arizona</option>
+            <option value="1364">Northern Arizona University</option>
+            <option value="custom">Custom ID</option>
+        </select>
+        <!-- field starts hidden -->
+        <input type="text" id="customSchoolId" placeholder="Enter custom school ID" class="hidden">
+        <button id="setSchoolButton">Set School</button>
+        <p id="statusMessage"></p>
+    </div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
